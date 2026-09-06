@@ -1,0 +1,19 @@
+# Assignment One: Do The Economics Op-ed
+
+Headline: Before You Panic About the Next Data Center, Ask "Compared to What?"
+
+If you've seen a headline warning that a new AI data center will use "as much water as a small city" or "as much electricity as an entire metro area," you've encountered what economists sometimes call the Big Number Boogeyman. These numbers are true numbers but, presented with zero context, engineered to produce alarm rather than understanding.
+
+Consider two real institutions. The first uses over 700 acres of land, 15 million square feet of buildings, 225 million kilowatt-hours of electricity a year, 2.6 million dekatherms of natural gas, a quarter-billion gallons of water, and holds a permit to discharge up to 45 million gallons a day into a river. Presented as a press release, this sounds like an environmental catastrophe waiting to happen.
+
+That institution is the University of Rochester.
+
+Compare it to Colossus I, the massive AI computing facility built in Memphis. Colossus sits on roughly a third of UR's acreage but is capable of drawing nearly six times UR's annual electricity from the grid if run at full capacity and its March 2026 water use rate was in the same rough order of magnitude as UR's. Both institutions are enormous by any everyday standard. Neither number, by itself, tells you whether either one is a problem or not.
+
+Big numbers alone don't tell you who pays. The real question an economist asks isn't "how much water/electricity/land did this use?" and instead it's "who bears the cost, and did they agree to it?" A data center or a university paying full market price for its water and power isn't inherently a problem, any more than a hospital or a stadium is a problem for using a lot of resources. That's simply the going rate for operating at scale.
+
+Second-order effects matter more than first impressions. Say Rochester welcomes a hyperscale data center with open arms. This causes tax revenue rises, some construction jobs materialize, and the region gets a small AI-economy foothold. But electricity demand strains the regional grid, and unless the facility pays the full cost of the infrastructure upgrades it requires, other ratepayers quietly subsidize it through higher bills and trickle down to a real transfer from ordinary households to a private company.
+
+Now say Rochester heavily restricts or taxes it instead. The facility doesn't disappear and instead it goes to Ohio, or Georgia, or back to Memphis, taking its tax revenue and jobs with it. Rochester loses the local benefit and gains nothing environmentally, since global electricity and water demand for AI computing doesn't vanish; it just relocates to wherever regulation is thinnest. Neither "welcome everything" nor "block everything" is automatically the right answer. Instead the right policy question is which specific costs, in which specific locations, are actually being externalized onto people who never agreed to bear them, and then price or regulate exactly that. None of this means every concern about data centers is exaggerated. Some genuinely aren't. The natural-gas turbines powering Colossus's expansion, for instance, are a real local air-quality issue that scale alone doesn't excuse. But conflating priced, market-rate resource use with genuine unpriced harm, makes it harder, not easier, to focus attention where it actually belongs.
+
+The next time a headline tells you a project will use "as much water as an entire city," the right first question isn't "is that a lot?" It's "compared to what, and who's actually paying for it?"
