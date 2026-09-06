@@ -2,5 +2,5 @@
 Environmental Economics, Fall 2026, University of Rochester
 
 ## Assignments
-- [Assignment 1: Before You Panic About the Next Data Center, Ask "Compared to What?"](Assignment 1)
+- [Assignment 1: NEW AI DATA CENTER DOES ___"](Assignment 1)
 
