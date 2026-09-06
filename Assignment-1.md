@@ -1,6 +1,4 @@
-# Assignment One: Do The Economics Op-ed 
-
-Headline: Before You Panic About the Next Data Center, Ask "Compared to What?"
+# Before You Panic About the Next Data Center, Ask "Compared to What?"
 
 If you've seen a headline warning that a new AI data center will use "as much water as a small city" or "as much electricity as an entire metro area," you've encountered what economists sometimes call the Big Number Boogeyman. These numbers are true numbers but, presented with zero context, engineered to produce alarm rather than understanding.
 
