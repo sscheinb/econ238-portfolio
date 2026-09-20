@@ -9,9 +9,8 @@ This page shares a real conversation exploring what's actually going on: is this
 
 
 Sources:
-
-Brian Potter, "How NEPA Works" — https://www.construction-physics.com/p/how-nepa-works
-Philip K. Howard, Saving Can-Do: How to Revive the Spirit of America (book) — publisher/description page: https://www.penguinrandomhouse.com
-Dan Wang, Breakneck: China's Quest to Engineer the Future (book)
-Seven County Infrastructure Coalition v. Eagle County, 145 S. Ct. 1497 (2025)
-YouTube video: https://www.youtube.com/watch?v=l48PUBWghNU
+- Brian Potter, "How NEPA Works" — https://www.construction-physics.com/p/how-nepa-works
+- Philip K. Howard, Saving Can-Do: How to Revive the Spirit of America (book) — publisher/description page: https://www.penguinrandomhouse.com
+- Dan Wang, Breakneck: China's Quest to Engineer the Future (book)
+- Seven County Infrastructure Coalition v. Eagle County, 145 S. Ct. 1497 (2025)
+- YouTube video: https://www.youtube.com/watch?v=l48PUBWghNU
