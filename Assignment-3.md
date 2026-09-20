@@ -14,7 +14,8 @@ She also discussed the role of social media. It allows people from different pla
 
 Misha did not think that simply speeding up processes like NEPA would solve the problem. She argued that the goal should be greater efficiency without removing careful environmental review. She also suggested investing more in science, engineering, and public communication. Better communication could help people understand science and build greater trust in institutions. Overall, Misha argued that the solution is not simply more engineers or fewer lawyers. The U.S. needs to combine different forms of expertise, communicate better with the public, and use its resources more effectively.
 
-**Sources:**- Brian Potter, "How NEPA Works" — https://www.construction-physics.com/p/how-nepa-works
+**Sources:**
+- Brian Potter, "How NEPA Works" — https://www.construction-physics.com/p/how-nepa-works
 - Philip K. Howard, Saving Can-Do: How to Revive the Spirit of America (book) — publisher/description page: https://www.penguinrandomhouse.com
 - Dan Wang, Breakneck: China's Quest to Engineer the Future (book)
 - Seven County Infrastructure Coalition v. Eagle County, 145 S. Ct. 1497 (2025)
