@@ -5,7 +5,7 @@ The United States wants to build more of almost everything right now: transmissi
 
 This page shares a real conversation exploring what's actually going on: is this a fixable regulatory problem, a deeper cultural one, or something in between? And if we could fix it, what would we have to give up to do it?
 
-**Recording:**[Conversation](Econ238.m4a)
+**Recording:** [Conversation](Econ238.m4a)
 
 **Synthesis of Conversation:**
 A main theme of my conversation with Misha was the lack of trust in American institutions. She struggled to name an institution that people across the political spectrum still trust. She explained that even organizations like the National Science Foundation can become tied to political issues. This can reduce public trust. Misha also said people may distrust institutions when they do not feel represented by them. She used scientific institutions as an example. They often include people with advanced degrees, which may make people with different backgrounds feel disconnected.
@@ -16,7 +16,7 @@ Misha did not think that simply speeding up processes like NEPA would solve the 
 
 **Sources:**
 - Brian Potter, "How NEPA Works" — https://www.construction-physics.com/p/how-nepa-works
-- Philip K. Howard, Saving Can-Do: How to Revive the Spirit of America (book) — publisher/description page: https://www.penguinrandomhouse.com
+- Philip K. Howard, Saving Can-Do: How to Revive the Spirit of America (book) — https://www.penguinrandomhouse.com
 - Dan Wang, Breakneck: China's Quest to Engineer the Future (book)
 - Seven County Infrastructure Coalition v. Eagle County, 145 S. Ct. 1497 (2025)
 - YouTube video: https://www.youtube.com/watch?v=l48PUBWghNU
