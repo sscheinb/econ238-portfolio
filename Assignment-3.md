@@ -11,8 +11,7 @@ This page shares a real conversation exploring what's actually going on: is this
 Sources:
 
 Brian Potter, "How NEPA Works" — https://www.construction-physics.com/p/how-nepa-works
-Doomberg, "Label Makers" (June 5) — the excerpt was provided directly in your assignment PDF; if publicly linkable, cite it as: Doomberg, "Label Makers," Doomberg.com, June 2026
-Philip K. Howard, Saving Can-Do: How to Revive the Spirit of America (book) — publisher/description page: https://www.penguinrandomhouse.com (search "Saving Can-Do Philip K. Howard" if the direct link doesn't resolve)
+Philip K. Howard, Saving Can-Do: How to Revive the Spirit of America (book) — publisher/description page: https://www.penguinrandomhouse.com
 Dan Wang, Breakneck: China's Quest to Engineer the Future (book)
-Seven County Infrastructure Coalition v. Eagle County, 145 S. Ct. 1497 (2025) — opinion available at supremecourt.gov; also summarized in the Wall Street Journal excerpt already quoted in your assignment PDF
+Seven County Infrastructure Coalition v. Eagle County, 145 S. Ct. 1497 (2025)
 YouTube video: https://www.youtube.com/watch?v=l48PUBWghNU
