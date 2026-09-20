@@ -9,6 +9,7 @@ This page shares a real conversation exploring what's actually going on: is this
 
 
 Sources:
+
 Brian Potter, "How NEPA Works" — https://www.construction-physics.com/p/how-nepa-works
 Doomberg, "Label Makers" (June 5) — the excerpt was provided directly in your assignment PDF; if publicly linkable, cite it as: Doomberg, "Label Makers," Doomberg.com, June 2026
 Philip K. Howard, Saving Can-Do: How to Revive the Spirit of America (book) — publisher/description page: https://www.penguinrandomhouse.com (search "Saving Can-Do Philip K. Howard" if the direct link doesn't resolve)
