@@ -1,1 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Four Times the Economy, Under a Quarter of the Air Pollution</title>
+<meta name="description" content="Since 1970 US GDP rose 349% while US emissions of six major air pollutants fell 78%. What EPA's numbers show, what drove it, and the catches.">
+<meta property="og:title" content="Four Times the Economy, Under a Quarter of the Air Pollution">
+<meta property="og:description" content="Since 1970 US GDP rose 349% while US emissions of six major air pollutants fell 78%.">
+<meta property="og:image" content="cover.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0B2545;--ghost:#173A63;--gold:#E3B75B;--sky:#6FD0FF;
+  --paper:#F5F7FA;--ink:#12263F;--muted:#56657A;--rule:#D3DCE6;--bar:#1B8BD1;--barText:#0B6AA5;
+  --cell:clamp(4px,1.2vw,10px);--gap:clamp(1px,.25vw,2px);--pitch:calc(var(--cell) + var(--gap));
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:'Newsreader',Georgia,serif;font-size:1.125rem;line-height:1.62}
+a{color:var(--barText);text-underline-offset:.15em}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--bar);outline-offset:3px}
+.wrap{max-width:46rem;margin:0 auto;padding:0 1.25rem}
 
+/* hero */
+.hero{background:var(--navy);color:#fff;padding:2.6rem 0 3.2rem}
+.tag{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:.9rem;color:#9DB4CF;margin:0 0 2.2rem;display:flex;flex-wrap:wrap;gap:.4rem 1.2rem}
+h1{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:clamp(2.3rem,7.2vw,4.1rem);line-height:1.02;letter-spacing:-.025em;margin:0 0 1.1rem;text-wrap:balance}
+.lede{font-size:1.3rem;color:#D6E3F2;margin:0 0 2.4rem;max-width:36rem;text-wrap:pretty}
+.metric{margin-bottom:1.5rem}
+.mhead{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;margin-bottom:.55rem;font-family:'Bricolage Grotesque',system-ui,sans-serif}
+.mname{font-size:1rem;font-weight:500;color:#E6EEF8}
+.mval{font-size:1.15rem;font-weight:700;font-variant-numeric:tabular-nums;color:var(--gold)}
+.metric.air .mval,.metric.air .mname{color:var(--sky)}
+.metric.air .mname{font-weight:700}
+.blocks{display:flex;gap:calc(var(--pitch)*1.2);align-items:flex-end}
+.blk{position:relative;display:block;flex:none;width:calc(var(--pitch)*10 - var(--gap));height:calc(var(--pitch)*10 - var(--gap))}
+.blk i{position:absolute;display:block}
+.ghost{inset:0;background:var(--ghost)}
+.f1{left:0;bottom:0;width:100%;height:calc(var(--pitch)*var(--r))}
+.f2{left:0;bottom:calc(var(--pitch)*var(--r));width:calc(var(--pitch)*var(--k));height:var(--pitch)}
+.f1,.f2{background:var(--gold)}
+.metric.air .f1,.metric.air .f2{background:var(--sky)}
+.blk::after{content:"";position:absolute;inset:0;
+  background-image:
+    linear-gradient(to right,transparent 0,transparent calc(var(--pitch) - var(--gap)),var(--navy) calc(var(--pitch) - var(--gap)),var(--navy) var(--pitch)),
+    linear-gradient(to bottom,transparent 0,transparent calc(var(--pitch) - var(--gap)),var(--navy) calc(var(--pitch) - var(--gap)),var(--navy) var(--pitch));
+  background-size:var(--pitch) var(--pitch)}
+.legend{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:.9rem;color:#B9CCE2;margin:1.6rem 0 .4rem;display:flex;flex-wrap:wrap;gap:.5rem 1.4rem;align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:.45rem}
+.sw{width:.8rem;height:.8rem;display:inline-block}
+.heronote{font-size:.85rem;color:#8FA8C4;margin:.6rem 0 0;line-height:1.5}
+.heronote a{color:#A9D7F5}
+.heronote .cite a{color:#A9D7F5}
+@media (prefers-reduced-motion:no-preference){
+  .blocks{animation:reveal 1.3s cubic-bezier(.3,.7,.2,1) var(--d) both}
+  @keyframes reveal{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+}
+
+/* body */
+section{padding-top:3rem}
+h2{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:clamp(1.6rem,4.5vw,2.1rem);line-height:1.1;letter-spacing:-.018em;margin:0 0 .8rem;text-wrap:balance}
+h3{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:1.2rem;margin:1.8rem 0 .5rem}
+p{margin:0 0 1rem;text-wrap:pretty}
+strong{font-weight:600}
+.cite{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:.72em;margin-left:.15em;white-space:nowrap}
+.cite a{text-decoration:none}
+.cite a:hover{text-decoration:underline}
+.pull{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:700;font-size:clamp(1.35rem,4vw,1.75rem);line-height:1.2;letter-spacing:-.012em;margin:2rem 0 0;padding:1.1rem 0 0;border-top:3px solid var(--ink);color:var(--ink);text-wrap:balance}
+.deepnote{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:.92rem;color:var(--muted);margin:0 0 1rem}
+
+/* sections */
+.part{margin-top:2.8rem;padding-top:2.2rem;border-top:1px solid var(--rule)}
+.part>:last-child{margin-bottom:0}
+.byline{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:500;font-size:1.05rem;color:#B9CCE2;margin:0 0 1.3rem}
+pre{white-space:pre-wrap;background:#E6ECF2;padding:.8rem 1rem;margin:.7rem 0;line-height:1.5;font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:.92rem}
+
+/* charts */
+.eq{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-weight:800;font-size:clamp(1.8rem,6.5vw,2.8rem);letter-spacing:-.02em;line-height:1.05;margin:.6rem 0 1.3rem;font-variant-numeric:tabular-nums}
+.eq small{display:block;font-size:.92rem;font-weight:500;color:var(--muted);letter-spacing:0;margin-top:.45rem}
+.eq .hl{color:var(--barText)}
+.row{margin-bottom:.9rem;font-family:'Bricolage Grotesque',system-ui,sans-serif}
+.rowhead{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;font-size:1rem;margin-bottom:.28rem}
+.rowhead b{color:var(--barText);font-variant-numeric:tabular-nums}
+.track{height:1.2rem;background:#E6ECF2}
+.bar{height:100%;background:var(--bar)}
+.cap{font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:.85rem;color:var(--muted);line-height:1.5;margin:.6rem 0 0}
+.dates{list-style:none;margin:1rem 0;padding:0}
+.dates li{display:grid;grid-template-columns:5.2rem 1fr;gap:.9rem;padding:.7rem 0;border-top:1px solid var(--rule)}
+.dates li:first-child{border-top:0}
+.dates b{font-family:'Bricolage Grotesque',system-ui,sans-serif;color:var(--barText)}
+@media (max-width:520px){.dates li{grid-template-columns:1fr;gap:.15rem}}
+.takes{margin:0;padding-left:1.2rem}
+.takes li{margin-bottom:.7rem}
+.notclaimed{border-top:1px solid var(--rule);margin-top:1.1rem;padding-top:.9rem}
+ul.plain{margin:0;padding-left:1.2rem}
+ul.plain li{margin-bottom:.7rem}
+
+/* sources */
+.src{padding-left:1.4rem;font-size:.97rem;margin:0}
+.src li{margin-bottom:.65rem}
+.src li:target{background:#E3F1FB;outline:6px solid #E3F1FB}
+footer{margin-top:2.6rem;padding:1.1rem 0 2.6rem;border-top:1px solid var(--rule);font-family:'Bricolage Grotesque',system-ui,sans-serif;font-size:.88rem;color:var(--muted);line-height:1.55}
+</style>
+</head>
+<body>
+
+<header class="hero">
+<div class="wrap">
+<p class="tag"><span>ECON 238</span><span>SHOW ME exhibit</span><span>Own topic: US growth and air quality</span></p>
+<h1>Four Times the Economy, Under a Quarter of the Air Pollution</h1>
+<p class="byline">By Sam Scheinbach</p>
+<p class="lede">Does a bigger economy have to mean dirtier air? EPA's numbers for the United States say no, with some catches.</p>
+
+<div class="metric econ"><div class="mhead"><span class="mname">Gross domestic product</span><b class="mval">+349%</b></div><div class="blocks" style="--d:0.15s" role="img" aria-label="Gross domestic product: +349% from 1970 to 2025"><span class="blk" style="--r:10;--k:0"><i class="ghost"></i><i class="f1"></i><i class="f2"></i></span><span class="blk" style="--r:10;--k:0"><i class="f1"></i><i class="f2"></i></span><span class="blk" style="--r:10;--k:0"><i class="f1"></i><i class="f2"></i></span><span class="blk" style="--r:10;--k:0"><i class="f1"></i><i class="f2"></i></span><span class="blk" style="--r:4;--k:9"><i class="f1"></i><i class="f2"></i></span></div></div>
+<div class="metric air"><div class="mhead"><span class="mname">Emissions, six principal air pollutants</span><b class="mval">−78%</b></div><div class="blocks" style="--d:0.50s" role="img" aria-label="Emissions, six principal air pollutants: −78% from 1970 to 2025"><span class="blk" style="--r:2;--k:2"><i class="ghost"></i><i class="f1"></i><i class="f2"></i></span></div></div>
+<div class="metric econ"><div class="mhead"><span class="mname">Vehicle miles traveled</span><b class="mval">+197%</b></div><div class="blocks" style="--d:0.85s" role="img" aria-label="Vehicle miles traveled: +197% from 1970 to 2025"><span class="blk" style="--r:10;--k:0"><i class="ghost"></i><i class="f1"></i><i class="f2"></i></span><span class="blk" style="--r:10;--k:0"><i class="f1"></i><i class="f2"></i></span><span class="blk" style="--r:9;--k:7"><i class="f1"></i><i class="f2"></i></span></div></div>
+<div class="metric econ"><div class="mhead"><span class="mname">Population</span><b class="mval">+67%</b></div><div class="blocks" style="--d:1.20s" role="img" aria-label="Population: +67% from 1970 to 2025"><span class="blk" style="--r:10;--k:0"><i class="ghost"></i><i class="f1"></i><i class="f2"></i></span><span class="blk" style="--r:6;--k:7"><i class="f1"></i><i class="f2"></i></span></div></div>
+<div class="metric econ"><div class="mhead"><span class="mname">Energy consumption</span><b class="mval">+46%</b></div><div class="blocks" style="--d:1.55s" role="img" aria-label="Energy consumption: +46% from 1970 to 2025"><span class="blk" style="--r:10;--k:0"><i class="ghost"></i><i class="f1"></i><i class="f2"></i></span><span class="blk" style="--r:4;--k:6"><i class="f1"></i><i class="f2"></i></span></div></div>
+
+<div class="legend" aria-hidden="true">
+<span><i class="sw" style="background:var(--ghost)"></i>One block is the 1970 level, and each square is 1%</span>
+<span><i class="sw" style="background:var(--gold)"></i>2025 economy and activity</span>
+<span><i class="sw" style="background:var(--sky)"></i>2025 emissions</span>
+</div>
+<p class="heronote">Change in the United States from 1970 to 2025. Emissions are the combined tons of carbon monoxide, nitrogen oxides, sulfur dioxide, volatile organic compounds, particles and lead. Source: <a href="https://www.epa.gov/air-trends/air-quality-national-summary">EPA, Air Quality: National Summary</a>, which draws on BEA, FHWA, Census and EIA data. <span class="cite">[<a href="#s12">12</a>]</span></p>
+</div>
+</header>
+
+<main class="wrap">
+
+<section>
+<h2>The main finding</h2>
+<p>Between 1970 and 2025, <strong>GDP rose 349%</strong>, vehicle miles traveled rose 197%, population grew 67% and energy use grew 46%. Over the same 55 years, EPA's estimate of combined emissions of six principal air pollutants <strong>fell 78%</strong>. Emissions are now 22% of their 1970 level while the economy is about 4.5 times its 1970 size. <span class="cite">[<a href="#s1">1</a>]</span></p>
+<p>Divide one by the other and each dollar of output carries about 5% of its 1970 emissions. The same arithmetic gives drops of roughly 93% per vehicle mile and 87% per person. Over these 55 years, more output did not mean more of these pollutants.</p>
+
+<h3>The other side</h3>
+<p>The good news has limits. About <strong>115 million people</strong> still live in counties above at least one national air standard, and coarse particle levels are up 23% since 2010. <span class="cite">[<a href="#s1">1</a>]</span> The headline number also counts only tons emitted inside US borders, so pollution that moved overseas with factories would look like progress. One study linked US and western European consumption to more than 108,600 premature deaths in China in 2007. <span class="cite">[<a href="#s8">8</a>, <a href="#s9">9</a>]</span> The total is also a sum of tons, so heavy pollutants dominate it, and carbon dioxide is not one of the six.</p>
+<p class="pull">A cleaner economy is not the same as clean air for everyone.</p>
+</section>
+
+<section class="part"><h2>Cleaner for every unit of growth</h2><p>Divide emissions by each measure of growth. With 1970 as 1, emissions are 0.22 and GDP is 4.49.</p>
+<div class="eq">0.22 &divide; 4.49 = <span class="hl">0.05</span><small>Each dollar of output now comes with about 5% of its 1970 emissions.</small></div>
+<div class="row"><div class="rowhead"><span>Emissions per dollar of GDP</span><b>−95%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:95%"></div></div></div>
+<div class="row"><div class="rowhead"><span>Emissions per vehicle mile</span><b>−93%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:93%"></div></div></div>
+<div class="row"><div class="rowhead"><span>Emissions per person</span><b>−87%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:87%"></div></div></div>
+<div class="row"><div class="rowhead"><span>Emissions per unit of energy</span><b>−85%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:85%"></div></div></div>
+<p class="cap">My calculation from EPA's rounded percentages, so accurate to a point or two. Indexes, 1970 = 1: vehicle miles 2.97, population 1.67, energy 1.46. <span class="cite">[<a href="#s1">1</a>]</span></p></section>
+<section class="part"><h2>Some pollutants vanished. Others barely budged.</h2><p>Sulfur dioxide and lead are nearly gone. Ozone-forming chemicals and particles have fallen far less.</p>
+<div class="row"><div class="rowhead"><span>Sulfur dioxide</span><b>−93%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:93%"></div></div></div>
+<div class="row"><div class="rowhead"><span>Lead*</span><b>−86%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:86%"></div></div></div>
+<div class="row"><div class="rowhead"><span>Carbon monoxide</span><b>−69%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:69%"></div></div></div>
+<div class="row"><div class="rowhead"><span>Nitrogen oxides</span><b>−69%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:69%"></div></div></div>
+<div class="row"><div class="rowhead"><span>Volatile organic compounds</span><b>−47%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:47%"></div></div></div>
+<div class="row"><div class="rowhead"><span>Fine particles (PM2.5)</span><b>−38%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:38%"></div></div></div>
+<div class="row"><div class="rowhead"><span>Coarse particles (PM10)</span><b>−36%</b></div><div class="track" aria-hidden="true"><div class="bar" style="width:36%"></div></div></div>
+<p class="cap">Change in emissions, 1990 to 2025. * EPA says its lead method changed after 2005, so treat lead as approximate. <span class="cite">[<a href="#s1">1</a>]</span></p>
+<p style="margin-top:1.1rem">In the air people actually breathe, sulfur dioxide is down 94% and carbon monoxide 81% since 1990, but ozone is down just 24%. <span class="cite">[<a href="#s1">1</a>]</span></p></section>
+<section class="part"><h2>Why it happened: rules, markets and a new part for cars</h2><p>Air pollution is an externality: the people who emit it do not pay for the harm it does to everyone else, so markets alone give them little reason to cut it. That is why the policies below used rules, caps and tradable permits.</p>
+<ul class="dates">
+<li><b>1970s</b><span>EPA phases lead out of gasoline and the catalytic converter arrives. Lead in the air fell 98% from 1980 to 2014, and new cars are 98 to 99% cleaner than in the 1960s. <span class="cite">[<a href="#s6">6</a>, <a href="#s7">7</a>]</span></span></li>
+<li><b>1990</b><span>Congress creates the first national cap and trade program, for power plant sulfur dioxide. By 2019 those emissions were 94% below 1990, at costs far lower than expected. <span class="cite">[<a href="#s4">4</a>, <a href="#s5">5</a>]</span></span></li>
+</ul>
+<p>Economists split growth's effect on pollution into scale, composition and technique, and a well-known 1995 study found no evidence that environmental quality steadily worsens as economies grow. <span class="cite">[<a href="#s10">10</a>]</span> This page shows the outcome, not how much came from policy, rising incomes or a changing mix of industry.</p>
+<p>EPA's own 2011 estimate put the benefits of the 1990 Clean Air Act Amendments at more than 30 times their costs in its central case and about 3 times in its low case. It also projected over 230,000 early deaths prevented in 2020 alone. These are modeled projections, not measurements. <span class="cite">[<a href="#s3">3</a>]</span></p></section>
+<section class="part"><h2>Rebuild it, then ask the next question</h2><p>An AI assistant (Claude) found EPA's figures and the sources below, computed the per-unit changes, drafted the caveats and helped build the page. Every percentage is copied as printed by EPA, and the only numbers I calculated are the per-unit changes. EPA's separate <i>Our Nation's Air</i> report shows the same pattern through 2023. <span class="cite">[<a href="#s11">11</a>]</span> One check worth repeating: EPA does not label GDP inflation adjusted, but +349% only makes sense in real terms, since nominal GDP grew nearly thirtyfold over this period.</p>
+<p>Paste these prompts into an AI assistant to rebuild the comparison, and check each answer against the linked EPA page.</p>
+<pre>Using EPA's Air Quality: National Summary, give me the percent change from 1970 to 2025 in GDP, vehicle miles traveled, population, energy consumption, and aggregate emissions of the six principal air pollutants. Quote the source for each number.</pre>
+<pre>Convert those to indexes with 1970 = 1. Compute 2025 emissions per dollar of GDP, per vehicle mile, per person and per unit of energy. Show the arithmetic.</pre>
+<pre>Now give me the percent change in emissions and in measured air concentrations by pollutant since 1990. What does the single combined number hide?</pre>
+<pre>Is that really what I was asking? What would make this picture misleading, and what evidence would change the conclusion?</pre>
+<p style="margin-top:1.1rem">Next questions: Does the pattern hold in your state or county? Does it change if you count emissions embedded in imports? For year-by-year lines, download EPA's trend data and chart it yourself. <span class="cite">[<a href="#s2">2</a>]</span></p></section>
+
+<section class="part">
+<h2>Sources (12)</h2>
+<ol class="src">
+<li id="s1">U.S. EPA, <a href="https://www.epa.gov/air-trends/air-quality-national-summary">Air Quality: National Summary</a>, updated September 30, 2026. Source of every headline percentage: growth in GDP, vehicle miles, population and energy; emissions change by pollutant; air concentrations; the 115 million figure.</li>
+<li id="s2">U.S. EPA, <a href="https://www.epa.gov/air-emissions-inventories/air-pollutant-emissions-trends-data">Air Pollutant Emissions Trends Data</a>. Year-by-year emissions files, for anyone who wants to draw the full lines.</li>
+<li id="s3">U.S. EPA, <a href="https://epa.gov/clean-air-act-overview/benefits-and-costs-clean-air-act-1990-2020-second-prospective-study">Benefits and Costs of the Clean Air Act 1990 to 2020, the Second Prospective Study</a> (March 2011). Full report: <a href="https://www.epa.gov/sites/default/files/2015-07/documents/fullreport_rev_a.pdf">PDF</a>. Source of the more than 30 to 1 central and about 3 to 1 low benefit-cost ratios and the 230,000 early deaths figure (modeled projections).</li>
+<li id="s4">U.S. EPA, <a href="https://blog.epa.gov/2020/05/21/the-acid-rain-program-a-success-story/">The Acid Rain Program: A Success Story</a> (May 2020). Power plant sulfur dioxide of 0.97 million tons in 2019, down 94% from 1990; costs far lower than expected.</li>
+<li id="s5">Resources for the Future, <a href="https://www.rff.org/publications/issue-briefs/the-us-environmental-protection-agencys-acid-rain-program/">The U.S. EPA's Acid Rain Program</a> (issue brief, November 2012). The first cap and trade system, and its 2010 goal reached by 2007 at a cost well below command-and-control.</li>
+<li id="s6">U.S. EPA, <a href="https://www.epa.gov/transportation-air-pollution-and-climate-change/accomplishments-and-successes-reducing-air">Accomplishments and Successes of Reducing Air Pollution from Transportation</a>. Lead phase-out, the catalytic converter, and cars 98 to 99% cleaner than in the 1960s.</li>
+<li id="s7">U.S. EPA, <a href="https://www.epa.gov/lead-air-pollution/basic-information-about-lead-air-pollution">Basic Information about Lead Air Pollution</a>. Airborne lead down 98% between 1980 and 2014.</li>
+<li id="s8">Zhang, Q. et al. (2017), <a href="https://www.nature.com/articles/nature21712">Transboundary health impacts of transported global air pollution and international trade</a>, <i>Nature</i> 543: 705–709. Pollution and health impacts shifted through international trade.</li>
+<li id="s9">AirClim, <a href="https://www.airclim.org/acidnews/air-pollution-health-impacts-shifted-global-trade">Air pollution health impacts shifted by global trade</a>. Summary of Zhang et al., source of the 108,600 premature deaths figure.</li>
+<li id="s10">Grossman, G. and Krueger, A. (1995), <a href="https://doi.org/10.2307/2118443">Economic Growth and the Environment</a>, <i>Quarterly Journal of Economics</i> 110(2): 353–377. The scale, composition and technique framing, and the finding that environmental quality does not steadily worsen with growth.</li>
+<li id="s11">U.S. EPA, <a href="https://gispub.epa.gov/air/trendsreport/2024/">Our Nation's Air</a> trends report. A separate EPA report used as a cross-check; it shows the same pattern through 2023.</li>
+<li id="s12">Data EPA cites for the growth series: <a href="https://apps.bea.gov/iTable/iTable.cfm?ReqID=19&step=4&isuri=1&1921=flatfiles">Bureau of Economic Analysis</a> (GDP), <a href="https://www.fhwa.dot.gov/policyinformation/travel_monitoring/tvt.cfm">Federal Highway Administration</a> (vehicle miles), <a href="https://www.census.gov/quickfacts/">Census Bureau</a> (population), <a href="https://www.eia.gov/totalenergy/data/browser/?tbl=T02.01#/?f=A&start=1970&end=2019&charted=3-6-9-12">Energy Information Administration</a> (energy).</li>
+</ol>
+</section>
+
+<footer>SHOW ME exhibit, own topic, by Sam Scheinbach. ECON 238 Environmental Economics, University of Rochester, Fall 2026. Research, arithmetic and page code assisted by Claude (Anthropic); all sources are linked above.</footer>
+
+</main>
+</body>
+</html>
