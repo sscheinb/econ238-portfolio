@@ -1,1 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Who Actually Owns the Land? A Land Acknowledgment Deck</title>
+<meta name="description" content="A short interactive deck on land acknowledgments, tribal property rights, casinos, and the idea of giving national parks back to the tribes. Econ 238, Week 9.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4efe6;--card:#fffdf8;--ink:#1f2622;--mute:#58655d;--acc:#b5471f;--acc2:#1f6b52;--rule:#ddd5c4}
+@media (prefers-color-scheme:dark){:root{--bg:#151a17;--card:#1d2420;--ink:#ecebe4;--mute:#a4b0a8;--acc:#ff8f63;--acc2:#58c78d;--rule:#33403a}}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--bg);color:var(--ink);font:19px/1.55 Newsreader,Georgia,serif;display:flex;flex-direction:column}
+h1,h2,.k,button,.dots{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+header{padding:12px 16px;display:flex;justify-content:space-between;align-items:center;font-size:14px;color:var(--mute)}
+.deck{flex:1;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch}
+.deck::-webkit-scrollbar{display:none}
+.slide{flex:0 0 100%;scroll-snap-align:start;overflow-y:auto;padding:8px 16px 24px}
+.card{max-width:720px;margin:0 auto;background:var(--card);border:1px solid var(--rule);border-radius:18px;padding:24px 22px}
+.k{color:var(--acc);font-weight:800;letter-spacing:.09em;text-transform:uppercase;font-size:13px}
+h1{font-size:clamp(34px,7vw,56px);line-height:1.04;margin:.2em 0 .3em;font-weight:800}
+h2{font-size:clamp(26px,5vw,34px);line-height:1.1;margin:.15em 0 .5em;font-weight:800}
+p{margin:.6em 0}
+.big{font-size:23px}
+.q{border-left:4px solid var(--acc2);padding:4px 0 4px 14px;margin:1em 0;color:var(--ink)}
+.q b{color:var(--acc2);font-family:"Bricolage Grotesque",sans-serif}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+@media(max-width:620px){.pair{grid-template-columns:1fr}}
+.box{border:1px solid var(--rule);border-radius:12px;padding:6px 14px 12px}
+.box h3{font:800 16px "Bricolage Grotesque",sans-serif;margin:.6em 0 .2em;color:var(--acc)}
+.num{font:800 44px/1 "Bricolage Grotesque",sans-serif;color:var(--acc)}
+.small{font-size:15px;color:var(--mute)}
+a{color:var(--acc2)}
+ul{padding-left:1.1em;margin:.4em 0}li{margin:.3em 0}
+nav{display:flex;align-items:center;justify-content:center;gap:14px;padding:10px 16px 16px}
+button{background:var(--ink);color:var(--bg);border:0;border-radius:999px;padding:10px 22px;font-size:16px;font-weight:800;cursor:pointer}
+button:disabled{opacity:.3;cursor:default}
+.dots{font-size:14px;color:var(--mute);min-width:64px;text-align:center}
+</style>
+</head>
+<body>
+<header><span>Econ 238 · Week 9 · Sam Scheinbach</span><span>Swipe, or use the buttons</span></header>
+<main class="deck" id="deck">
 
+<section class="slide"><div class="card">
+<div class="k">A deck about ownership</div>
+<h1>Who actually owns the land?</h1>
+<p class="big">A university can announce that its campus sits on stolen land and not change a single deed. This deck asks what that statement does, what it leaves alone, and what would actually change things.</p>
+<p class="small">Made from my recorded class discussion and written answers, Econ 238, University of Rochester. I used Claude to help organize it. The views are mine. Sources are on the last slide.</p>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">Start here</div>
+<h2>The sentence at the bottom of an email</h2>
+<p class="big">"The University of Rochester is recognized as being located on the unceded territory of the Seneca Nation, a part of the Haudenosaunee Confederacy."</p>
+<p>That line sits in the footer of university emails. It is called a land acknowledgment.</p>
+<div class="q"><b>Pause.</b> After someone reads it, what is different? Who gets something? Who gives something up?</div>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">Where it came from</div>
+<h2>A practice that grew without a law</h2>
+<ul>
+<li><b>Late 1970s, Australia:</b> the "Welcome to Country" begins.</li>
+<li><b>1992:</b> the Mabo decision recognizes native title in Australia, and acknowledgments spread through the 1990s.</li>
+<li><b>2015, Canada:</b> after the Truth and Reconciliation Commission reports on residential schools, the practice grows.</li>
+<li><b>US, 2010s and early 2020s:</b> museums, universities and nonprofits adopt it. It gets wide attention at the 2020 Oscars.</li>
+</ul>
+<p>What gave rise to it: reconciliation movements and public reports on colonial harm. What did not: a court ruling or law that changed who owns land.</p>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">The economics</div>
+<h2>It's cheap talk</h2>
+<p class="big">Saying it costs almost nothing. It earns the speaker reputation. The people it names get very little.</p>
+<div class="pair">
+<div class="box"><h3>Symbolic ownership</h3><p>Saying the land is someone's.</p></div>
+<div class="box"><h3>Legal ownership</h3><p>Who can sell it, build on it, borrow against it, and keep others off.</p></div>
+</div>
+<p>An acknowledgment only does the first. A critic quoted in one overview compares it to a thief who keeps a stolen laptop and adds a plaque admitting the theft. Others see it as a small first step.</p>
+<div class="q"><b>Think about it.</b> If a message costs nothing to send, what does it tell you about the sender?</div>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">The cost of disagreeing</div>
+<h2>Cheap to say, costly to question</h2>
+<p>At the University of Washington, computer science professor Stuart Reges put a mocking acknowledgment in his syllabus, saying that by "the labor theory of property" the Coast Salish people could claim almost none of the land the university sits on. The school ordered him to remove it, then investigated him.</p>
+<p>On December 19, 2025, a divided federal appeals court held that the investigation and discipline threats violated his First Amendment rights. The court ruled on his right to speak. It did not say his property argument was right.</p>
+<p><b>The equilibrium:</b> agreeing is safe and earns praise, and disagreeing is risky. So most people say the line whatever they privately think, and it looks like everyone agrees. Economists call this preference falsification.</p>
+<div class="q"><b>Think about it.</b> When nobody objects, how would you know if anyone disagreed?</div>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">What "owning" means on a reservation</div>
+<h2>Sovereignty on paper, red tape in practice</h2>
+<div class="pair">
+<div class="box"><h3>A typical homeowner</h3><ul><li>Can sell</li><li>Can lease</li><li>Can borrow against it</li><li>Needs nobody's approval</li></ul></div>
+<div class="box"><h3>Most reservation land</h3><ul><li>Held in trust by the federal government</li><li>Leases and mortgages usually need Bureau of Indian Affairs approval</li><li>Banks lend on leases, not the land</li></ul></div>
+</div>
+<p>The General Allotment (Dawes) Act of 1887 split reservations into individual parcels of about 160 acres. When owners died, land passed to all heirs as shares, and today a single parcel can have hundreds of owners. A 2017 BIA estimate counted about 2.9 million of these fractional interests across 150 reservations, held by about 243,000 owners.</p>
+<div class="q"><b>Think about it.</b> If you can't sell, borrow against, or easily lease your land, how much is it worth to you?</div>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">A puzzle</div>
+<h2>Why Ireland and the Caymans, and not reservations?</h2>
+<p>Ireland and the Cayman Islands became corporate havens. Reservations have sovereignty, location and legal carve-outs, and mostly did not. The difference is rules a company can count on.</p>
+<div class="pair">
+<div class="box"><h3>Ireland, Cayman Islands</h3><ul><li>Low or no income tax</li><li>Ireland: access to the European market</li><li>Cayman: a reliable legal system</li></ul></div>
+<div class="box"><h3>Reservations</h3><ul><li>Trust land and slow approvals</li><li>Parcels with many owners</li><li>Unclear which courts and laws apply</li><li>Often far from cities and customers</li></ul></div>
+</div>
+<p>A carve-out only helps if the basics work too.</p>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">The exception</div>
+<h2>Casinos: when the rules finally let investment in</h2>
+<p>In the 1987 <i>Cabazon</i> case, the Supreme Court held that states could not apply their gambling rules on reservations if they allowed gambling elsewhere. Congress passed the Indian Gaming Regulatory Act in 1988.</p>
+<p><span class="num">$100M</span> → <span class="num">$16.7B</span> → <span class="num">$26.5B+</span></p>
+<p class="small">Tribal gaming revenue: about $100 million in 1988, $16.7 billion in 2003, and over $26.5 billion a year since 2009.</p>
+<p><b>My takeaway:</b> casinos worked because the law gave tribes something valuable and reliable, and many are near customers. They did not fix property rights, and remote tribes cannot use that option. Where the rules let a reservation do something profitable, investment follows.</p>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">An example that works</div>
+<h2>Vancouver: build where you control the land</h2>
+<p>Noah Smith describes Sen̓áḵw, built by the Squamish Nation: about 11 towers and roughly 6,000 apartments on a little over 10 acres. It sits on reserve land, so it isn't under the city's zoning rules, and the Nation chose to build much denser than the city normally allows.</p>
+<p><b>My view:</b> this is a clear example of what real benefit looks like. When the owner can actually build on and earn from the land, the land has value. It ties back to the reservations that can't.</p>
+<div class="q"><b>Think about it.</b> What does it say about cities that a tribe can build what the city won't allow?</div>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">The big question</div>
+<h2>Give the national parks back?</h2>
+<p>The professor's proposal: return the parks to the tribes that were pushed out of them. The history, as told in a 2025 Wall Street Journal op-ed by Terry Anderson and Holly Fretwell:</p>
+<ul>
+<li>Yellowstone (1872) took in part of the Crow reservation.</li>
+<li>Yosemite pushed out the Southern Sierra Miwok.</li>
+<li>The Blackfeet sold land in 1895 and lost hunting and fishing rights when Glacier became a park in 1910.</li>
+<li>The Havasupai were removed from the Grand Canyon plateau in 1882 and regained 185,000 acres in 1975.</li>
+<li>Ute Mountain Tribal Park charges $50 per person per day, versus $35 per car at Yellowstone.</li>
+</ul>
+<p><b>My honest answer:</b> it's a strong point, but I wouldn't hand over every park at once. I'd try co-management or leases with restrictions, such as no building a big store at a geyser, in a few parks, and measure results after ten years: tribal income, visitor numbers and how well the land is protected.</p>
+<div class="q"><b>Hard questions I can't answer.</b> Many tribes can claim one park. Could a tribe close it, or develop it? Who decides, and what would we measure?</div>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">What would change my mind</div>
+<h2>What would real follow-through look like?</h2>
+<p>Instead of a statement, an institution could offer:</p>
+<ul>
+<li>Money or scholarships, such as tuition support for members of the Seneca Nation</li>
+<li>Joint research or conservation projects, and hiring</li>
+<li>Payment for the land it uses</li>
+<li>Land returned, or a real say in how land is used</li>
+</ul>
+<p>And a way to check: compare enrollment, graduation and funding before and after, and ask tribal leaders whether it helped. Why doesn't a school already do this? It costs money, and a statement is free. Donors and trustees aren't pushing for it.</p>
+<p><b>Can I still make the case for symbolism?</b> Yes. It costs little, it starts a conversation, and it brings up a history that was left out. I can accept that and still ask for more.</p>
+</div></section>
+
+<section class="slide"><div class="card">
+<div class="k">Your turn</div>
+<h2>Five questions to take with you</h2>
+<ol>
+<li>Does an acknowledgment change who controls land? Is there a case where it did?</li>
+<li>If saying it is easy and objecting is risky, how would you know what people really think?</li>
+<li>Why did casinos work on reservations when so little else did?</li>
+<li>Would you give the national parks back to the tribes? All, some, or none, and why?</li>
+<li>If your school replaced its statement with an action, what should it be, and how would you measure it?</li>
+</ol>
+<h3 style="font-family:'Bricolage Grotesque';margin-top:1.4em">Sources</h3>
+<ul class="small">
+<li><a href="https://minneapolisfed.org/indiancountry/resources/tribal-leaders-handbook-on-homeownership/navigating-land-issues">Minneapolis Fed, Tribal Leaders Handbook on Homeownership: Navigating Land Issues</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Indian_Gaming_Regulatory_Act">Indian Gaming Regulatory Act (Wikipedia)</a></li>
+<li><a href="https://www.wikiwand.com/en/Land_acknowledgment">Land acknowledgment (Wikiwand)</a> and <a href="https://www.scu.edu/ethics/focus-areas/campus-ethics/more-than-a-ritual-rethinking-the-purpose-of-the-land-acknowledgment/">Santa Clara University, "More than a ritual"</a></li>
+<li><a href="https://reason.com/2025/12/22/the-9th-circuit-upholds-a-university-of-washington-professors-right-to-mock-land-acknowledgments">Reason, on the Ninth Circuit ruling in Reges v. Cauce</a></li>
+<li><a href="https://www.noahpinion.blog/p/no-you-are-not-on-indigenous-land">Noah Smith, "No, you are not on Indigenous land"</a></li>
+<li>Terry Anderson and Holly Fretwell, <i>The Wall Street Journal</i>, Oct. 16, 2025 (excerpt provided in the course assignment)</li>
+</ul>
+<p class="small">Sam Scheinbach, ECON 238, University of Rochester. Made with Claude from my own recorded discussion.</p>
+</div></section>
+
+</main>
+<nav><button id="prev">Back</button><span class="dots" id="dots"></span><button id="next">Next</button></nav>
+<script>
+(function(){
+var d=document.getElementById('deck'),s=d.querySelectorAll('.slide'),dots=document.getElementById('dots'),p=document.getElementById('prev'),n=document.getElementById('next');
+function idx(){return Math.round(d.scrollLeft/d.clientWidth)}
+function go(i){i=Math.max(0,Math.min(s.length-1,i));d.scrollTo({left:i*d.clientWidth,behavior:'smooth'})}
+function upd(){var i=idx();dots.textContent=(i+1)+" / "+s.length;p.disabled=i===0;n.disabled=i===s.length-1}
+p.onclick=function(){go(idx()-1)};n.onclick=function(){go(idx()+1)};
+d.addEventListener('scroll',upd);window.addEventListener('resize',upd);
+document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(idx()+1);if(e.key==='ArrowLeft')go(idx()-1)});
+upd();
+})();
+</script>
+</body>
+</html>
