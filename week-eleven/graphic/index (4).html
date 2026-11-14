@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Sam Scheinbach, ECON 238, Week 11" />
+  <title>Feed the Ocean Our Leftovers</title>
+  <style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+  <style type="text/css">:root{--bg:#ffffff;--fg:#1d2733;--muted:#5b6876;--accent:#0b6b8a;--line:#d9e1e8}
+@media (prefers-color-scheme: dark){:root{--bg:#10171e;--fg:#e6edf3;--muted:#9aa7b4;--accent:#5cc4e0;--line:#2a3743}}
+body{background:var(--bg);color:var(--fg);font:18px/1.65 Georgia,serif;max-width:720px;margin:0 auto;padding:24px 16px 64px}
+h1.title{font-size:2.1rem;line-height:1.2;margin:.4em 0 .1em}
+p.subtitle{font-size:1.2rem;color:var(--accent);margin:0 0 .4em}
+p.author{color:var(--muted);margin:0 0 1.5em}
+h2{font-size:1.35rem;margin-top:2em;border-bottom:1px solid var(--line);padding-bottom:.2em}
+a{color:var(--accent)}
+table{border-collapse:collapse;width:100%;font-size:.88rem;margin:1em 0;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left}
+th{background:rgba(11,107,138,.12)}
+header#title-block-header{margin-bottom:1em}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Feed the Ocean Our Leftovers</h1>
+<p class="subtitle">Paying steelmakers to turn their waste into fish</p>
+<p class="author">Sam Scheinbach, ECON 238, Week 11</p>
+</header>
+<h2 id="the-idea">The idea</h2>
+<p>Steelmaking leaves behind slag, a man-made rock rich in iron that
+costs mills money to get rid of. Plankton need iron to grow, and some
+coasts and parts of the ocean are short of it. My idea is for steel
+companies to ship prepared slag to iron-poor fishing grounds, run
+through a local fishing cooperative that owns the right to the extra
+fish. More iron means more plankton, more plankton means more fish, and
+the steelmaker gets a use for its waste. It would start with small
+coastal pilots.</p>
+<h2 id="why-it-seems-crazy-and-why-it-may-not-be">Why it seems crazy,
+and why it may not be</h2>
+<p>It seems crazy because it means putting industrial waste in the sea
+on purpose. At least 16 open ocean iron experiments have been done, and
+one critical summary says none has shown it to be an effective way to
+remove carbon (Geoengineering Monitor, which opposes the technique).</p>
+<p>It may not be crazy because the coastal version already exists. In
+2004 Nippon Steel developed a method that mixes steel slag with soil and
+humus to restore dying seaweed beds at Mashike, Hokkaido. Kelp grew well
+30 meters from the units after six months, and the effect was confirmed
+after two and three years. But the proven part is small: the project’s
+certified carbon removal was only 49.5 tons between 2018 and 2022.</p>
+<h2 id="the-calculation">The calculation</h2>
+<p>Plankton need very little iron: about 5 micromoles per mole of carbon
+for open ocean algae (13 to 16 for coastal diatoms), so one ton of iron
+supports about 43,000 tons of plankton carbon. I assumed fish are 10
+percent carbon and each step up the food chain keeps 10 percent of the
+energy, with three steps from plankton to a fish people catch. That
+means one ton of fish needs about 100 tons of plankton carbon, or about
+2.3 kg of usable iron.</p>
+<p>How much slag that takes depends on how much of its iron plankton can
+use. I assumed slag is 15 percent iron. A Nippon Steel paper says
+dissolved iron from slag quickly turns into an insoluble solid, which
+“markedly decreases the biological utility of iron,” so I tested four
+cases.</p>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Share of slag iron plankton can use</th>
+<th>Slag per ton of extra fish</th>
+<th>Cost per ton of fish if all extra fish are caught</th>
+<th>Cost if only 1 in 10 is caught</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.01%</td>
+<td>155 tons</td>
+<td>about $4,260</td>
+<td>about $42,600</td>
+</tr>
+<tr class="even">
+<td>0.1%</td>
+<td>15.5 tons</td>
+<td>about $426</td>
+<td>about $4,260</td>
+</tr>
+<tr class="odd">
+<td>1%</td>
+<td>1.55 tons</td>
+<td>about $43</td>
+<td>about $426</td>
+</tr>
+<tr class="even">
+<td>10%</td>
+<td>0.155 tons</td>
+<td>about $4</td>
+<td>about $43</td>
+</tr>
+</tbody>
+</table>
+<p><em>Slag costs $5 per ton at the plant plus about $22.50 shipping
+(rounded from bulk freight examples of $9.65 and $34.25 per ton). Fish
+are worth about $1,720 per ton, which I calculated from FAO 2022
+data.</em></p>
+<p>Counting only slag and shipping, the project breaks even if plankton
+can use about 0.025 percent of the iron in slag, or about 0.25 percent
+if only 1 in 10 extra fish gets caught. The next section adds the cost
+of catching the fish and running the project, which raises the bar.</p>
+<p>To check for overdoing it, the world makes 190 to 290 million tons of
+steel slag a year (USGS). Using 10 percent of it at 0.1 percent
+usability adds about 1.2 to 1.9 million tons of fish, 1.5 to 2.3 percent
+of the roughly 81 million ton marine catch. At 1 percent usability it
+adds 15 to 23 percent. At 10 percent the math says more than the entire
+world catch, which is impossible, so iron must stop being the limit
+first, and the other nutrients (nitrogen, silica) set the real
+ceiling.</p>
+<h2 id="the-economic-benefit">The economic benefit</h2>
+<p>To test the money, I looked at two cases: a one year pilot using
+1,000 tons of slag, and a scaled program using 100,000 tons a year.
+These are my assumptions, not measured prices.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Item</th>
+<th>Assumption</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Slag plus shipping</td>
+<td>$5 + $22.50 = $27.50 per ton</td>
+</tr>
+<tr class="even">
+<td>Value of fish</td>
+<td>$1,720 per ton</td>
+</tr>
+<tr class="odd">
+<td>Cost of catching the extra fish</td>
+<td>50% of the fish’s value (fuel, crew, boats)</td>
+</tr>
+<tr class="even">
+<td>Yearly fixed cost, pilot</td>
+<td>$150,000 (permits, monitoring, scientists)</td>
+</tr>
+<tr class="odd">
+<td>Yearly fixed cost, scaled program</td>
+<td>$1,000,000</td>
+</tr>
+<tr class="even">
+<td>One time pilot setup</td>
+<td>$300,000</td>
+</tr>
+<tr class="odd">
+<td>Share of extra fish that is caught</td>
+<td>100% (tested at 10% below)</td>
+</tr>
+</tbody>
+</table>
+<p>For each case I took the slag, divided by the tons of slag needed per
+ton of fish (from the table above) to get extra fish, multiplied by
+$1,720 for revenue, then subtracted the cost of catching the fish, the
+slag and shipping, and the fixed cost.</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Share of slag iron plankton can use</th>
+<th>Pilot: extra fish</th>
+<th>Pilot: net per year</th>
+<th>Scaled: extra fish</th>
+<th>Scaled: net per year</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>0.01%</td>
+<td>6.5 tons</td>
+<td>loss of $172,000</td>
+<td>645 tons</td>
+<td>loss of $3.2 million</td>
+</tr>
+<tr class="even">
+<td>0.1%</td>
+<td>64.5 tons</td>
+<td>loss of $122,000</td>
+<td>6,452 tons</td>
+<td>gain of $1.8 million</td>
+</tr>
+<tr class="odd">
+<td>1%</td>
+<td>645 tons</td>
+<td>gain of $377,000</td>
+<td>64,523 tons</td>
+<td>gain of $51.7 million</td>
+</tr>
+</tbody>
+</table>
+<p>Adding the cost of catching the fish, the break-even rises from 0.025
+percent to about 0.05 percent of slag iron, before fixed costs. Once the
+pilot has to cover its $150,000 a year, it needs about 0.3 percent
+usable iron, while the scaled program needs only about 0.07 percent
+because the fixed cost is spread over far more fish. If the pilot works
+at the 1 percent level, it pays back its $300,000 setup in about 0.8
+years. At 0.1 percent it never does.</p>
+<p>Here is where the pilot’s money goes if 1 percent of the iron is
+usable. The extra fish sell for about $1.11 million. About $555,000 pays
+for catching them, which is work for local crews and boats. The
+steelmaker receives $5,000 for slag and shipping companies $22,500.
+Scientists and permits cost $150,000, and the remaining $377,000 goes to
+the fishing cooperative.</p>
+<p>Two changes test how fragile this is. If slag sold for $40 a ton, the
+USGS average across all slag types, instead of $5, the break-even usable
+iron share more than doubles to about 0.11 percent, because slag headed
+to sea competes with the cement and road builders who buy it today. If
+fishers only catch 1 in 10 of the extra fish, it rises to about 0.5
+percent.</p>
+<p>My conclusion is that the economic benefit is real but depends on one
+unknown number, how much iron plankton can use. At pilot size the
+project probably loses money unless that number is fairly high, so the
+pilot’s job is to buy that information cheaply. The business only makes
+sense at scale. Besides the cooperative’s income, the steelmaker gets an
+outlet for waste, and neighbors may gain from more seaweed habitat,
+which I did not put a price on.</p>
+<h2 id="why-hasnt-someone-done-this-already">Why hasn’t someone done
+this already?</h2>
+<p>Today slag is sold as road base, asphalt filler and a cement
+ingredient, or landfilled. That is predictable and legal. Its
+shortcoming is that it does nothing for iron-starved coasts and leaves
+steelmakers with a disposal cost.</p>
+<p>Four things stand in the way. It is mostly illegal: the London
+Protocol was amended in 2013 to ban ocean fertilization except for
+legitimate scientific research. The one famous commercial attempt went
+badly, when the Haida Salmon Restoration Corporation dumped 120 tons of
+ferrous sulphate off British Columbia in 2012 and the project was
+cancelled after an international outcry. The carbon results from
+experiments were disappointing. And nobody owns the open ocean, so a
+company cannot capture the fish its iron creates. That is why I tie the
+project to a fishing cooperative with a clear right to its grounds.</p>
+<p>The incumbents hurt would be buyers of slag. Cement and road builders
+use it as a cheap input, and diverting it to sea could raise their costs
+and, for cement, mean more limestone and more CO2 elsewhere.</p>
+<h2 id="the-chestertons-fence-question">The Chesterton’s fence
+question</h2>
+<p>Low iron in some waters is a natural limit, and removing it changes
+the food web. Critics warn of toxic algal blooms, oxygen loss when a
+bloom decays, and modeling that predicts harm to fisheries, which is the
+opposite of what I promise. It is worth the risk only because I start
+with small coastal tests that can be measured and stopped. The fence
+only comes down if the pilots show the benefit is real.</p>
+<h2 id="incentives-and-unintended-effects">Incentives and unintended
+effects</h2>
+<p>The steelmaker saves its disposal cost. The cooperative pays for
+shipping out of the extra catch, or they split it. Unintended effects I
+expect are a rise in costs for slag buyers, possible toxic blooms, a pH
+rise near the site (slag releases calcium), and possible metals
+leaching, which I could not find a source on. If it were sold as a
+climate fix, cheap weak carbon credits could also reduce the pressure to
+cut emissions. External effects reach neighbors who fish the same water,
+for good if the fish spread, and for bad if a bloom turns toxic.</p>
+<h2 id="the-biggest-drawbacks">The biggest drawbacks</h2>
+<p>The technical one is that we do not know how much slag iron plankton
+can use, and the break-even depends on it. The fix is a small pilot that
+measures it, using the humus method from Japan. The political one is
+that the law bans it and the Haida case hurt trust. The fix is to run
+pilots under a scientific permit, with the community’s consent and
+shared catch.</p>
+<h2 id="where-we-need-more-innovation">Where we need more
+innovation</h2>
+<p>[YOUR VIEW. Write two or three sentences in your own words about what
+areas of society need more innovation and why more people are not
+working on them.]</p>
+<h2 id="what-people-said-when-i-tried-it">What people said when I tried
+it</h2>
+<p>[YOUR RESULTS. Ask two or three friends or family members, then write
+what they said, what worried them, and what they liked.]</p>
+<h2 id="assumptions">Assumptions</h2>
+<p>I assumed slag is 15 percent iron, that fish are 10 percent carbon,
+that 10 percent of energy passes each food chain step with three steps
+to fish, the $5 plant price and $22.50 shipping, that the cooperative
+catches the extra fish, that catching it costs half its value, and the
+pilot costs in the economics section ($150,000 a year plus $300,000 to
+set up). The rest comes from the sources below.</p>
+<h2 id="sources">Sources</h2>
+<ul>
+<li><a href="https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-iron-steel-slag.pdf">USGS,
+Iron and Steel Slag (2026)</a></li>
+<li><a href="https://www.nipponsteel.com/en/sustainability/env/biodiversity/sea.html">Nippon
+Steel, Creation of Sea Forests</a></li>
+<li><a href="https://www.nipponsteel.com/en/tech/report/nsc/pdf/NSTR101-33_tech_review-5-4.pdf">Nippon
+Steel Technical Report on converter slag and humus</a></li>
+<li><a href="https://www.geoengineeringmonitor.org/technologies/ocean-fertilisation">Geoengineering
+Monitor, Ocean Fertilisation</a></li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4471429">Frontiers
+in Microbiology (2015), phytoplankton iron to carbon ratios</a></li>
+<li><a href="https://www.fao.org/newsroom/detail/fao-report-global-fisheries-and-aquaculture-production-reaches-a-new-record-high/en">FAO,
+global fisheries and aquaculture production (2022 data)</a></li>
+<li><a href="https://www.argusmedia.com/en/news-and-insights/latest-market-news/2419369-dry-bulk-freight-rates-at-multi-year-lows">Argus
+Media, dry bulk freight rates</a></li>
+</ul>
+</body>
+</html>
