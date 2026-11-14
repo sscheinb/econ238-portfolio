@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feed the Ocean Our Leftovers</title>
+<style>
+:root{
+  --bg:#f4f8fa; --card:#ffffff; --fg:#14232e; --muted:#53636f; --line:#d5e0e7;
+  --accent:#0b6b8a; --accent-fg:#ffffff; --steel:#5b6b78; --warn:#b4531a; --good:#17803d;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e161c; --card:#16222b; --fg:#e8eff4; --muted:#9db0bd; --line:#2a3b47;
+    --accent:#5cc4e0; --accent-fg:#06222c; --steel:#9db0bd; --warn:#f0a064; --good:#5fd08a;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e161c; --card:#16222b; --fg:#e8eff4; --muted:#9db0bd; --line:#2a3b47;
+  --accent:#5cc4e0; --accent-fg:#06222c; --steel:#9db0bd; --warn:#f0a064; --good:#5fd08a;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:17px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:760px;margin:0 auto;padding:28px 16px 56px}
+.kicker{font-size:.8rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+h1{font-size:clamp(2rem,7vw,3rem);line-height:1.08;margin:0 0 10px}
+.sub{font-size:1.15rem;color:var(--accent);margin:0 0 22px;font-weight:600}
+.btn{display:block;text-align:center;background:var(--accent);color:var(--accent-fg);
+  text-decoration:none;font-weight:700;font-size:1.1rem;padding:16px 18px;border-radius:12px;margin:0 0 26px}
+.btn:hover,.btn:focus-visible{filter:brightness(1.08);outline:3px solid var(--fg);outline-offset:2px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px;margin:0 0 18px}
+.card h2{font-size:1.05rem;margin:0 0 10px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.flow{display:grid;grid-template-columns:1fr;gap:10px;list-style:none;margin:0;padding:0}
+.flow li{position:relative;border:1px solid var(--line);border-radius:10px;padding:12px 14px;background:var(--bg)}
+.flow li b{display:block;font-size:1.02rem}
+.flow li span{color:var(--muted);font-size:.93rem}
+.flow li:not(:last-child)::after{content:"\2193";position:absolute;left:50%;bottom:-17px;transform:translateX(-50%);
+  background:var(--card);color:var(--accent);font-weight:700;line-height:1;padding:0 4px;z-index:1}
+@media (min-width:640px){
+  .flow{grid-template-columns:repeat(5,1fr);gap:14px}
+  .flow li:not(:last-child)::after{content:"\2192";left:auto;right:-14px;bottom:auto;top:50%;transform:translateY(-50%)}
+}
+.stats{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:560px){.stats{grid-template-columns:repeat(3,1fr)}}
+.stat{border:1px solid var(--line);border-radius:10px;padding:14px;background:var(--bg)}
+.stat .n{display:block;font-size:1.7rem;font-weight:800;color:var(--accent);line-height:1.1}
+.stat .l{display:block;color:var(--muted);font-size:.9rem;margin-top:4px}
+.two{display:grid;grid-template-columns:1fr;gap:12px}
+@media (min-width:640px){.two{grid-template-columns:1fr 1fr}}
+.pill{display:inline-block;font-size:.78rem;font-weight:700;padding:2px 9px;border-radius:99px;margin-bottom:6px;
+  border:1px solid currentColor}
+.pill.good{color:var(--good)} .pill.warn{color:var(--warn)}
+ul.tight{margin:0;padding-left:1.1em} ul.tight li{margin:4px 0}
+.note{font-size:.88rem;color:var(--muted);margin:10px 0 0}
+footer{color:var(--muted);font-size:.85rem;margin-top:26px}
+footer a{color:var(--accent)}
+</style>
+</head>
+<body>
+<main>
+  <p class="kicker">ECON 238 &middot; Week 11 &middot; Batsh!t Crazy Idea</p>
+  <h1>Feed the Ocean Our Leftovers</h1>
+  <p class="sub">Paying steelmakers to turn their waste into fish</p>
+
+  <a class="btn" href="https://sscheinb.github.io/econ238-portfolio/week-eleven/index.html">Read the full project, with calculations and sources &rarr;</a>
+
+  <section class="card" aria-labelledby="how">
+    <h2 id="how">How it works</h2>
+    <ol class="flow">
+      <li><b>Steel mill</b><span>Makes slag, an iron-rich rock it pays to dispose of</span></li>
+      <li><b>Ship</b><span>Carries prepared slag to the coast</span></li>
+      <li><b>Iron-poor fishing ground</b><span>Run by a local fishing co-op that owns the extra catch</span></li>
+      <li><b>Plankton bloom</b><span>Iron is the missing nutrient</span></li>
+      <li><b>More fish</b><span>Co-op sells them and shares the value</span></li>
+    </ol>
+  </section>
+
+  <section class="card" aria-labelledby="nums">
+    <h2 id="nums">The numbers</h2>
+    <div class="stats">
+      <div class="stat"><span class="n">190&ndash;290 Mt</span><span class="l">of steel slag made worldwide every year</span></div>
+      <div class="stat"><span class="n">2.3 kg</span><span class="l">of usable iron per ton of extra fish (my estimate)</span></div>
+      <div class="stat"><span class="n">0.05%</span><span class="l">of slag iron must be usable to cover slag, shipping and the cost of catching the fish (0.5% if only 1 in 10 extra fish is caught)</span></div>
+    </div>
+    <p class="note">Assumes slag is 15% iron, fish are worth about $1,720 per ton, slag costs $5 per ton plus about $22.50 shipping, and catching the fish costs half their value. Assumptions are listed in the full project.</p>
+  </section>
+
+  <section class="card" aria-labelledby="money">
+    <h2 id="money">The economic benefit: a 1,000 ton pilot</h2>
+    <div class="stats">
+      <div class="stat"><span class="n">$377k</span><span class="l">left for the fishing co-op each year if plankton use 1% of slag iron</span></div>
+      <div class="stat"><span class="n">0.8 yrs</span><span class="l">to pay back a $300,000 setup in that case</span></div>
+      <div class="stat"><span class="n">&minus;$122k</span><span class="l">loss per year if plankton use only 0.1%, so the pilot is mainly buying information</span></div>
+    </div>
+    <p class="note">At 100,000 tons a year the fixed cost spreads out, and break-even falls to about 0.07% usable iron. All dollar figures are modeled from my assumptions, not measured prices.</p>
+  </section>
+
+  <section class="card" aria-labelledby="real">
+    <h2 id="real">Why it is not as crazy as it sounds</h2>
+    <p style="margin:0">Nippon Steel already uses slag, soil and humus to bring back seaweed beds at Mashike, Japan. Kelp grew well 30 meters from the units after six months, and the effect held after two and three years. The proven scale is small, which is why this idea starts with pilots.</p>
+  </section>
+
+  <div class="two">
+    <section class="card" aria-labelledby="who">
+      <span class="pill good">Who gains</span>
+      <ul class="tight" id="who">
+        <li>Steelmakers: no disposal cost</li>
+        <li>Fishing co-ops: bigger catch</li>
+        <li>Shipping: more cargo</li>
+      </ul>
+    </section>
+    <section class="card" aria-labelledby="risk">
+      <span class="pill warn">What could go wrong</span>
+      <ul class="tight" id="risk">
+        <li>Toxic algae blooms and oxygen loss</li>
+        <li>Cement and road builders lose a cheap input</li>
+        <li>Banned outside research since 2013</li>
+        <li>Slag iron may not dissolve well</li>
+      </ul>
+    </section>
+  </div>
+
+  <a class="btn" href="https://sscheinb.github.io/econ238-portfolio/week-eleven/index.html">See the full write-up &rarr;</a>
+
+  <footer>Sam Scheinbach &middot; ECON 238, Fall 2026 &middot; <a href="https://sscheinb.github.io/econ238-portfolio/week-eleven/index.html">Full project</a></footer>
+</main>
+</body>
+</html>
